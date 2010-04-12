@@ -845,7 +845,7 @@ Map::CreatureRelocation(Creature *creature, float x, float y, float z, float ang
         creature->Relocate(x, y, z, ang);
         creature->SetNeedNotify();
 
-        // Hack for Eye of Acherus part 2
+        // Hack for Eye of Acherus Part 2
         if(creature->isCharmed())
         {
             UpdateObjectVisibility(creature->GetCharmerOrOwnerPlayerOrPlayerItself(), new_cell, new_val);
